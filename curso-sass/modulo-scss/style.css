@@ -3,4 +3,7 @@ p span {
 }
 p b {
   background: green;
+}
+p:hover {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
