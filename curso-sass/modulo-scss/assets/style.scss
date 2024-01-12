@@ -1,0 +1,49 @@
+.btn {
+    width: 200px;
+    cursor: pointer;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    // &.btn-laranja {
+    //     background-color: orange;
+
+    //     &:hover {
+    //         background-color: rgb(169, 130, 58);
+    //     }
+    // }
+
+    // &.btn-vermelho {
+    //     background-color: red;
+
+    //     &:hover {
+    //         background-color: rgb(160, 43, 43);
+    //     }
+    // }
+}
+
+.btn-laranja {
+    @extend .btn;
+
+    background-color: orange;
+
+    &:hover {
+        background-color: rgb(177, 132, 49);
+    }
+}
+
+.btn-vermelho {
+    @extend .btn;
+
+    background-color: red;
+
+    &:hover {
+        background-color: rgb(168, 57, 57);
+    }
+}
