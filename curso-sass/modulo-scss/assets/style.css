@@ -24,4 +24,12 @@
 }
 .btn-vermelho:hover {
   background-color: rgb(168, 57, 57);
+}
+
+p {
+  color: blue;
+  cursor: pointer;
+}
+p:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
