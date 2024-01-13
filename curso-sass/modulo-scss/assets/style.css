@@ -3,6 +3,8 @@
   cursor: pointer;
   padding: 10px 0;
   background: none;
+  display: block;
+  margin: 10px;
   border: none;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -12,17 +14,19 @@
 }
 
 .btn-laranja {
-  background-color: orange;
+  background: orange;
+  color: #000;
 }
 .btn-laranja:hover {
-  background-color: rgb(177, 132, 49);
+  background: gray;
 }
 
 .btn-vermelho {
-  background-color: red;
+  background: red;
+  color: #000;
 }
 .btn-vermelho:hover {
-  background-color: rgb(168, 57, 57);
+  background: gray;
 }
 
 .btn-roxo {
@@ -30,7 +34,7 @@
   color: #000;
 }
 .btn-roxo:hover {
-  background-color: rgb(165, 65, 165);
+  background: #404040;
 }
 
 .btn-amarelo {
@@ -38,7 +42,7 @@
   color: #000;
 }
 .btn-amarelo:hover {
-  background-color: rgb(150, 150, 18);
+  background: gray;
 }
 
 .btn-dourado {
@@ -46,7 +50,7 @@
   color: #000;
 }
 .btn-dourado:hover {
-  background-color: rgb(152, 131, 12);
+  background: gray;
 }
 
 p {

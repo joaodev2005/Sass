@@ -1,8 +1,21 @@
+@mixin button-style($background, $color) {
+    background: $background;
+    color: $color;
+    &:hover {
+        // background: darken($background, 5%);
+        // background: mix($background, gold);
+        background: grayscale($background);
+        // background: darken($color: #fff);
+    }
+}
+
 .btn {
     width: 200px;
     cursor: pointer;
     padding: 10px 0;
     background: none;
+    display: block;
+    margin: 10px;
     border: none;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -27,54 +40,27 @@
     // }
 }
 
-@mixin button-style($background, $color) {
-    background: $background;
-    color: $color;
-}
-
 .btn-laranja {
     @extend .btn;
-
-    background-color: $color-orange;
-
-    &:hover {
-        background-color: rgb(177, 132, 49);
-    }
+    @include button-style($color-orange, #000)
 }
 
 .btn-vermelho {
     @extend .btn;
-
-    background-color: red;
-
-    &:hover {
-        background-color: rgb(168, 57, 57);
-    }
+    @include button-style($color-vermelho, #000)
 }
 
 .btn-roxo {
     @extend .btn;
     @include button-style($color-roxo, #000);
-
-    &:hover {
-        background-color: rgb(165, 65, 165);
-    }
 }
 
 .btn-amarelo {
     @extend .btn;
     @include button-style($color-amarelo, #000);
-
-    &:hover {
-        background-color: rgb(150, 150, 18);
-    }
 }
 
 .btn-dourado {
     @extend .btn;
     @include button-style($color-dourado, #000);
-
-    &:hover {
-        background-color: rgb(152, 131, 12);
-    }
 }
