@@ -4,7 +4,6 @@
     padding: 10px 0;
     background: none;
     border: none;
-    color: #fff;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -28,6 +27,11 @@
     // }
 }
 
+@mixin button-style($background, $color) {
+    background: $background;
+    color: $color;
+}
+
 .btn-laranja {
     @extend .btn;
 
@@ -45,5 +49,32 @@
 
     &:hover {
         background-color: rgb(168, 57, 57);
+    }
+}
+
+.btn-roxo {
+    @extend .btn;
+    @include button-style($color-roxo, #000);
+
+    &:hover {
+        background-color: rgb(165, 65, 165);
+    }
+}
+
+.btn-amarelo {
+    @extend .btn;
+    @include button-style($color-amarelo, #000);
+
+    &:hover {
+        background-color: rgb(150, 150, 18);
+    }
+}
+
+.btn-dourado {
+    @extend .btn;
+    @include button-style($color-dourado, #000);
+
+    &:hover {
+        background-color: rgb(152, 131, 12);
     }
 }

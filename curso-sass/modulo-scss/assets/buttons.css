@@ -12,9 +12,6 @@
   -o-border-radius: 10px;
 }
 
-.btn-laranja {
-  background-color: var();
-}
 .btn-laranja:hover {
   background-color: rgb(177, 132, 49);
 }

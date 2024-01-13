@@ -1,10 +1,9 @@
-.btn, .btn-vermelho, .btn-laranja {
+.btn, .btn-dourado, .btn-amarelo, .btn-roxo, .btn-vermelho, .btn-laranja {
   width: 200px;
   cursor: pointer;
   padding: 10px 0;
   background: none;
   border: none;
-  color: #fff;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -24,6 +23,30 @@
 }
 .btn-vermelho:hover {
   background-color: rgb(168, 57, 57);
+}
+
+.btn-roxo {
+  background: purple;
+  color: #000;
+}
+.btn-roxo:hover {
+  background-color: rgb(165, 65, 165);
+}
+
+.btn-amarelo {
+  background: yellow;
+  color: #000;
+}
+.btn-amarelo:hover {
+  background-color: rgb(150, 150, 18);
+}
+
+.btn-dourado {
+  background: gold;
+  color: #000;
+}
+.btn-dourado:hover {
+  background-color: rgb(152, 131, 12);
 }
 
 p {
